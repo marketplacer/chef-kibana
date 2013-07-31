@@ -48,5 +48,3 @@ template "#{node['kibana']['installdir']}/current/config.js" do
   mode "0750"
   user kibana_user
 end
-
-include_recipe "kibana::#{node['kibana']['webserver']}"
